@@ -1,0 +1,8 @@
+npm init -y
+mkdir src
+touch index.html src/index.js
+npm install -D webpack webpack-cli
+mkdir dist
+npx webpack
+npm install --save lodash
+npx webpack
