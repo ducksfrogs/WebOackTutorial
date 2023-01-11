@@ -1,0 +1,9 @@
+npm install -D webpack webpack-cli
+npx webpack
+npm install --save lodash
+touch webpack.config.js
+npx webpack --config webpack.config.js
+npm run build
+npm install --save-dev style-loader css-loader
+touch src/style.css
+npm run build
