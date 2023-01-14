@@ -8,9 +8,11 @@ module.exports = {
         print: './src/print.js',
     },
     devtool: 'inline-source-map',
+    devServer: {
+        static: './dist',
+    },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Output Management',
             title: 'Development',
         }),
     ],
@@ -18,5 +20,9 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
+        publicPath: '/',
+    },
+    optimization: {
+        runtimeChunk: 'single',
     },
 };
